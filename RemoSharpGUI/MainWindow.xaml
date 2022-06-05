@@ -20,13 +20,9 @@
                    ScrollViewer.CanContentScroll="True" />
         </StackPanel>-->
 
-        <Border BorderBrush="Gray" Background="LightGray" BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,152,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="Gray" Background="LightGray" BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,211,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="Gray" Background="LightGray" BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,270,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="Gray" Background="LightGray" BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,329,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="Gray" Background="LightGray" BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,388,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
 
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="10,10,0,0" VerticalAlignment="Top" Width="452" Grid.ColumnSpan="3">
+        <Border Background="Gray" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="10,10,0,0" VerticalAlignment="Top" Width="452" Grid.ColumnSpan="3">
+
             <StackPanel Margin="95,141,0,0" HorizontalAlignment="Left" Width="32" Height="290" VerticalAlignment="Top">
                 <RadioButton GroupName="Client0" x:Name="radioButton_0_1" Content=" " HorizontalAlignment="Left" Height="14" Margin="8,7,0,0" VerticalAlignment="Top" Width="14"/>
                 <RadioButton GroupName="Client0" x:Name="radioButton_0_2" Content=" " HorizontalAlignment="Left" Height="14" Margin="8,11,0,0" VerticalAlignment="Top" Width="14" IsChecked="True"/>
@@ -48,6 +44,14 @@
 
 
         </Border>
+        <Label x:Name="label" Content="Broadcaster Client Manager" HorizontalAlignment="Left" Margin="106,10,0,396" Width="260" FontSize="18" Foreground="White" FontWeight="Bold"/>
+
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,152,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,211,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,270,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,329,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,388,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
+
         <!--<Border BorderBrush="Black" BorderThickness="1" Background="LightGray" HorizontalAlignment="Left" Height="78" Margin="206,183,0,0" VerticalAlignment="Top" Width="30"/>-->
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="101,10,0,0" VerticalAlignment="Top" Width="157" Grid.Column="2" Grid.ColumnSpan="2">
@@ -93,17 +97,17 @@
 
         <Canvas HorizontalAlignment="Left" Height="254" Margin="283,182,0,0" VerticalAlignment="Top" Width="0">
 
-            <Label x:Name="Collab_Label_0" Content="Collaborator_1" VerticalAlignment="Center" HorizontalAlignment="Left" Background="{x:Null}" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="-17"/>
-            <Label x:Name="Collab_Label_1" Content="Collaborator_2" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="44" VerticalAlignment="Top"/>
-            <Label x:Name="Collab_Label_2" Content="Collaborator_3" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="102" VerticalAlignment="Top"/>
-            <Label x:Name="Collab_Label_3" Content="Collaborator_4" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="160" VerticalAlignment="Top"/>
-            <Label x:Name="Collab_Label_4" Content="Collaborator_5" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="220" VerticalAlignment="Top"/>
+            <Label x:Name="Collab_Label_0" Content="Collaborator_1" VerticalAlignment="Center" HorizontalAlignment="Left" Background="{x:Null}" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="-17" Foreground="White"/>
+            <Label x:Name="Collab_Label_1" Content="Collaborator_2" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="44" VerticalAlignment="Top" Foreground="White"/>
+            <Label x:Name="Collab_Label_2" Content="Collaborator_3" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="102" VerticalAlignment="Top" Foreground="White"/>
+            <Label x:Name="Collab_Label_3" Content="Collaborator_4" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="160" VerticalAlignment="Top" Foreground="White"/>
+            <Label x:Name="Collab_Label_4" Content="Collaborator_5" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="220" VerticalAlignment="Top" Foreground="White"/>
 
-            <Label x:Name="Port_Label_0" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="-6" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label x:Name="Port_Label_1" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="54" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label x:Name="Port_Label_2" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="112" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label x:Name="Port_Label_3" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="172" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label x:Name="Port_Label_4" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="232" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Label x:Name="Port_Label_0" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="-6" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+            <Label x:Name="Port_Label_1" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="54" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+            <Label x:Name="Port_Label_2" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="112" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+            <Label x:Name="Port_Label_3" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="172" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+            <Label x:Name="Port_Label_4" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="232" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
 
             <TextBox x:Name="Port_00" TextWrapping="Wrap" Text="18581" Width="48" Height="23" Canvas.Left="45" VerticalAlignment="Center" HorizontalAlignment="Left" Canvas.Top="-2" TextAlignment="Center"/>
             <TextBox x:Name="Port_01" TextWrapping="Wrap" Text="18581" Width="48" Height="23" Canvas.Left="45" VerticalAlignment="Center" Canvas.Top="58" HorizontalAlignment="Left" TextAlignment="Center"/>

@@ -188,6 +188,7 @@ namespace RemoSharpBroadcasterGUI
 
             if (this.ConnectButton00.Content.Equals("Connect"))
             {
+                this.alive_server_count++;
                 server00_Stay_Alive = true;
                 this.ConnectButton00.Content = "Disconnect";
                 Thread thread = new Thread(() => ConnectToServer0(address));
@@ -197,9 +198,10 @@ namespace RemoSharpBroadcasterGUI
             {
                 server00_Stay_Alive = false;
                 this.ConnectButton00.Content = "Connect";
+                this.alive_server_count--;
             }
 
-            
+            if (alive_server_count == 0) this.NetSel.IsEnabled = true; else this.NetSel.IsEnabled = false;
         }
 
         private void ConnectButton01_Click(object s, RoutedEventArgs ea)
@@ -229,6 +231,7 @@ namespace RemoSharpBroadcasterGUI
 
             if (this.ConnectButton01.Content.Equals("Connect"))
             {
+                this.alive_server_count++;
                 server01_Stay_Alive = true;
                 this.ConnectButton01.Content = "Disconnect";
                 Thread thread = new Thread(() => ConnectToServer1(address));
@@ -238,9 +241,10 @@ namespace RemoSharpBroadcasterGUI
             {
                 server01_Stay_Alive = false;
                 this.ConnectButton01.Content = "Connect";
+                this.alive_server_count--;
             }
 
-
+            if (alive_server_count == 0) this.NetSel.IsEnabled = true; else this.NetSel.IsEnabled = false;
         }
 
         private void ConnectButton02_Click(object s, RoutedEventArgs ea)
@@ -270,6 +274,7 @@ namespace RemoSharpBroadcasterGUI
 
             if (this.ConnectButton02.Content.Equals("Connect"))
             {
+                this.alive_server_count++;
                 server02_Stay_Alive = true;
                 this.ConnectButton02.Content = "Disconnect";
                 Thread thread = new Thread(() => ConnectToServer2(address));
@@ -279,9 +284,10 @@ namespace RemoSharpBroadcasterGUI
             {
                 server02_Stay_Alive = false;
                 this.ConnectButton02.Content = "Connect";
+                this.alive_server_count--;
             }
 
-
+            if (alive_server_count == 0) this.NetSel.IsEnabled = true; else this.NetSel.IsEnabled = false;
         }
 
         private void ConnectButton03_Click(object s, RoutedEventArgs ea)
@@ -311,6 +317,7 @@ namespace RemoSharpBroadcasterGUI
 
             if (this.ConnectButton03.Content.Equals("Connect"))
             {
+                this.alive_server_count++;
                 server03_Stay_Alive = true;
                 this.ConnectButton03.Content = "Disconnect";
                 Thread thread = new Thread(() => ConnectToServer3(address));
@@ -320,9 +327,10 @@ namespace RemoSharpBroadcasterGUI
             {
                 server03_Stay_Alive = false;
                 this.ConnectButton03.Content = "Connect";
+                this.alive_server_count--;
             }
 
-
+            if (alive_server_count == 0) this.NetSel.IsEnabled = true; else this.NetSel.IsEnabled = false;
         }
 
         private void ConnectButton04_Click(object s, RoutedEventArgs ea)
@@ -352,6 +360,7 @@ namespace RemoSharpBroadcasterGUI
 
             if (this.ConnectButton04.Content.Equals("Connect"))
             {
+                this.alive_server_count++;
                 server04_Stay_Alive = true;
                 this.ConnectButton04.Content = "Disconnect";
                 Thread thread = new Thread(() => ConnectToServer4(address));
@@ -361,9 +370,11 @@ namespace RemoSharpBroadcasterGUI
             {
                 server04_Stay_Alive = false;
                 this.ConnectButton04.Content = "Connect";
+                this.alive_server_count--;
+
             }
 
-
+            if (alive_server_count == 0) this.NetSel.IsEnabled = true; else this.NetSel.IsEnabled = false;
         }
 
         private void SendTester(WebSocket client, bool keepSending) 
