@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RemoSharpGUI.Properties
+namespace RemoSharpBroadcasterGUI.Properties
 {
 
 
