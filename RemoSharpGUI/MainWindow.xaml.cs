@@ -43,7 +43,17 @@ namespace RemoSharpBroadcasterGUI
         public MainWindow()
         {
             this.alive_server_count = 0;
+
+
             InitializeComponent();
+
+            // writing the name of the collaborator servers onto the GUI
+            this.Collab_Label_0.Content = "Collaborator 1" + Environment.NewLine + "Bounds Server";
+            this.Collab_Label_1.Content = "Collaborator 2" + Environment.NewLine + "Bounds Server";
+            this.Collab_Label_2.Content = "Collaborator 3" + Environment.NewLine + "Bounds Server";
+            this.Collab_Label_3.Content = "Collaborator 4" + Environment.NewLine + "Bounds Server";
+            this.Collab_Label_4.Content = "Collaborator 5" + Environment.NewLine + "Bounds Server";
+
             var networkList = NetworkConfig.GetNetworkListDataFromPC();
             this.availableNetworks = networkList;
             string[] networkListNamesForDropDown;

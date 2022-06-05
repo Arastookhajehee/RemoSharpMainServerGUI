@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RemoSharpBroadcasterGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="503" Width="669" Icon="/RemoSharpIcon 2.jpg" Closing="TurnOffServers">
+        Title="MainWindow" Height="503" Width="669" Icon="/RemoSharpIcon 3.jpg" Closing="TurnOffServers">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="374*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="301*"/>
             <ColumnDefinition Width="12*"/>
             <ColumnDefinition Width="249*"/>
             <ColumnDefinition Width="23*"/>
@@ -21,7 +24,7 @@
         </StackPanel>-->
 
 
-        <Border Background="Gray" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="10,10,0,0" VerticalAlignment="Top" Width="452" Grid.ColumnSpan="3">
+        <Border Background="Gray" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="5,10,0,0" VerticalAlignment="Top" Width="452" Grid.ColumnSpan="5" Grid.Column="1">
 
             <StackPanel Margin="95,141,0,0" HorizontalAlignment="Left" Width="32" Height="290" VerticalAlignment="Top">
                 <RadioButton GroupName="Client0" x:Name="radioButton_0_1" Content=" " HorizontalAlignment="Left" Height="14" Margin="8,7,0,0" VerticalAlignment="Top" Width="14"/>
@@ -44,21 +47,21 @@
 
 
         </Border>
-        <Label x:Name="label" Content="Broadcaster Client Manager" HorizontalAlignment="Left" Margin="106,10,0,396" Width="260" FontSize="18" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Broadcaster Client Manager" HorizontalAlignment="Left" Margin="33,10,0,396" Width="260" FontSize="18" Foreground="White" FontWeight="Bold" Grid.Column="3"/>
 
-        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,152,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,211,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,270,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,329,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
-        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="17,388,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="3"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="12,152,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="5" Grid.Column="1"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="12,211,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="5" Grid.Column="1"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="12,270,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="5" Grid.Column="1"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="12,329,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="5" Grid.Column="1"/>
+        <Border BorderBrush="black"  BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="12,388,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="5" Grid.Column="1"/>
 
         <!--<Border BorderBrush="Black" BorderThickness="1" Background="LightGray" HorizontalAlignment="Left" Height="78" Margin="206,183,0,0" VerticalAlignment="Top" Width="30"/>-->
 
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="101,10,0,0" VerticalAlignment="Top" Width="157" Grid.Column="2" Grid.ColumnSpan="2">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="442" Margin="101,10,0,0" VerticalAlignment="Top" Width="157" Grid.Column="5" Grid.ColumnSpan="2">
             <Label x:Name="label2" Content="Computer ID&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,132,0,274" Width="113" FontSize="18"/>
         </Border>
 
-        <Border Margin="17,46,0,0" BorderBrush="Black" BorderThickness="0.5" Height="74" VerticalAlignment="Top" HorizontalAlignment="Left" Width="438" Grid.ColumnSpan="3" >
+        <Border Margin="12,46,0,0" BorderBrush="Black" BorderThickness="0.5" Height="74" VerticalAlignment="Top" HorizontalAlignment="Left" Width="438" Grid.ColumnSpan="5" Grid.Column="1" >
             <ScrollViewer x:Name="NetList" VerticalScrollBarVisibility="Auto" TextBlock.TextAlignment="Left" Margin="10" Foreground="Black" />
         </Border>
         <!--<StackPanel Margin="0,0,400,383">
@@ -67,7 +70,7 @@
                    ScrollViewer.CanContentScroll="True" />
         </StackPanel>-->
 
-        <ComboBox x:Name="NetSel" HorizontalAlignment="Left" BorderBrush="Black" Margin="17,125,0,0" VerticalAlignment="Top" Width="438" IsEnabled="True" SelectionChanged="NetSel_SelectionChanged" Height="22" Grid.ColumnSpan="3">
+        <ComboBox x:Name="NetSel" HorizontalAlignment="Left" BorderBrush="Black" Margin="12,125,0,0" VerticalAlignment="Top" Width="438" IsEnabled="True" SelectionChanged="NetSel_SelectionChanged" Height="22" Grid.ColumnSpan="5" Grid.Column="1">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="White"/>
@@ -88,20 +91,20 @@
             <TextBlock x:Name="Address08" TextWrapping="Wrap" Text="ws://192.168.0.100:18580/RemoSharp" Width="287" Height="26" HorizontalAlignment="Left" TextAlignment="Left"/>
             <TextBlock x:Name="Address09" TextWrapping="Wrap" Text="ws://192.168.0.100:18580/RemoSharp" Width="287" Height="26" HorizontalAlignment="Left" TextAlignment="Left"/>
         </StackPanel>-->
-        <StackPanel HorizontalAlignment="Left" Margin="17,178,0,-25" Orientation="Vertical" Width="61">
+        <StackPanel HorizontalAlignment="Left" Margin="12,178,0,-25" Orientation="Vertical" Width="61" Grid.ColumnSpan="3" Grid.Column="1">
 
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Margin="205,178,0,-25" Orientation="Vertical" Width="34">
+        <StackPanel HorizontalAlignment="Left" Margin="132,178,0,-25" Orientation="Vertical" Width="34" Grid.Column="3">
 
         </StackPanel>
 
-        <Canvas HorizontalAlignment="Left" Height="254" Margin="283,182,0,0" VerticalAlignment="Top" Width="0">
+        <Canvas HorizontalAlignment="Left" Height="254" Margin="210,182,0,0" VerticalAlignment="Top" Width="0" Grid.Column="3">
 
-            <Label x:Name="Collab_Label_0" Content="Collaborator_1" VerticalAlignment="Center" HorizontalAlignment="Left" Background="{x:Null}" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="-17" Foreground="White"/>
-            <Label x:Name="Collab_Label_1" Content="Collaborator_2" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="44" VerticalAlignment="Top" Foreground="White"/>
-            <Label x:Name="Collab_Label_2" Content="Collaborator_3" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="102" VerticalAlignment="Top" Foreground="White"/>
-            <Label x:Name="Collab_Label_3" Content="Collaborator_4" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="160" VerticalAlignment="Top" Foreground="White"/>
-            <Label x:Name="Collab_Label_4" Content="Collaborator_5" HorizontalAlignment="Center" FontWeight="Bold" Canvas.Left="-263" Canvas.Top="220" VerticalAlignment="Top" Foreground="White"/>
+            <Label x:Name="Collab_Label_0" Content="Collaborator_1" VerticalAlignment="Center" HorizontalAlignment="Left" Background="{x:Null}" FontWeight="Bold" Canvas.Left="-261" Canvas.Top="-26" Foreground="White"/>
+            <Label x:Name="Collab_Label_1" Content="Collaborator_2" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="-261" Canvas.Top="35" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="Collab_Label_2" Content="Collaborator_3" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="-261" Canvas.Top="93" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="Collab_Label_3" Content="Collaborator_4" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="-261" Canvas.Top="151" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="Collab_Label_4" Content="Collaborator_5" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="-261" Canvas.Top="211" VerticalAlignment="Center" Foreground="White"/>
 
             <Label x:Name="Port_Label_0" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="-6" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
             <Label x:Name="Port_Label_1" Content="Port" FontWeight="Bold" Canvas.Left="9" Canvas.Top="54" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
@@ -151,10 +154,10 @@
             <TextBox x:Name="Full_Address_3" TextWrapping="Wrap" Text="Full Address 04" Width="236" Height="23" Canvas.Left="-143" HorizontalAlignment="Left" Canvas.Top="150" VerticalAlignment="Center" FontSize="11"/>
             <TextBox x:Name="Full_Address_4" TextWrapping="Wrap" Text="Full Address 05" Width="236" Height="23" Canvas.Left="-143" HorizontalAlignment="Left" Canvas.Top="209" VerticalAlignment="Center" FontSize="11"/>
         </Canvas>
-        <Canvas HorizontalAlignment="Left" Height="254" Margin="18,182,0,0" VerticalAlignment="Top" Width="0" Grid.Column="2"/>
-        <TextBlock x:Name="PC_ID" HorizontalAlignment="Left" Margin="101,181,0,0" TextWrapping="Wrap" Text="100" TextAlignment="Center" VerticalAlignment="Top" Height="88" Width="145" FontSize="48" Grid.Column="2"/>
-        <TextBlock x:Name="PC_ADDRESS" HorizontalAlignment="Left" Margin="101,49,0,0" TextWrapping="Wrap" Text="100" TextAlignment="Center" VerticalAlignment="Top" Height="88" Width="145" FontSize="48" Grid.Column="2"/>
-        <Label x:Name="label1" Content="Address" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="101,10,0,0" VerticalAlignment="Top" FontSize="18" Width="157" Height="34" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Canvas HorizontalAlignment="Left" Height="254" Margin="18,182,0,0" VerticalAlignment="Top" Width="0" Grid.Column="5"/>
+        <TextBlock x:Name="PC_ID" HorizontalAlignment="Left" Margin="101,181,0,0" TextWrapping="Wrap" Text="100" TextAlignment="Center" VerticalAlignment="Top" Height="88" Width="145" FontSize="48" Grid.Column="5"/>
+        <TextBlock x:Name="PC_ADDRESS" HorizontalAlignment="Left" Margin="101,49,0,0" TextWrapping="Wrap" Text="100" TextAlignment="Center" VerticalAlignment="Top" Height="88" Width="145" FontSize="48" Grid.Column="5"/>
+        <Label x:Name="label1" Content="Address" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="101,10,0,0" VerticalAlignment="Top" FontSize="18" Width="157" Height="34" Grid.Column="5" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
